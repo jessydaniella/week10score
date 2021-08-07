@@ -9,14 +9,14 @@ import Login from "./Components/Pages/Login";
 function App() {
   const linkStyle = {
     textDecoration: "none",
-    
+    color: 'white',
     margin: "60px",
     fontsize: "30px",
     fontWeight: "bold",
   };
   return (
     <div className="App">
-      <div className="nav-container"></div>
+      <div className="nav-Container">
         <nav>
           <Link style={linkStyle} to="/home">
             Home
@@ -31,6 +31,7 @@ function App() {
             Login
           </Link>
         </nav>
+        </div>
         <Switch>
           <Route path="/home">
             <Home />
